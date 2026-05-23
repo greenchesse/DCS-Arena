@@ -1,0 +1,651 @@
+<template>
+  <div class="page">
+    <nav class="nav">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <img src="./DCS_LOGO.png" alt="DCS Arena logo" />
+        </div>
+        <div class="logo-text">DCS <span>Arena</span></div>
+      </div>
+      <div class="nav-links">
+        <div class="nav-link">Features</div>
+        <div class="nav-link">Sports</div>
+        <div class="nav-link">Schedule</div>
+        <div class="nav-link">About</div>
+      </div>
+      <button class="nav-cta">Log In</button>
+    </nav>
+
+    <section class="hero">
+      <h1 class="hero-title">The <em>Arena</em> for DCS Intramurals</h1>
+      <p class="hero-sub">
+        A centralized platform for managing events, schedules, standings, and
+        results for the Department of Computer Studies intramurals.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-main">Get Started</button>
+        <button class="btn-outline">View Schedule</button>
+      </div>
+    </section>
+
+    <div class="sec-header">
+      <div class="sec-tag">About US</div>
+      <div class="sec-title">We make Intrams Easy</div>
+      <div class="sec-sub">Built specifically for the DCS Intramurals.</div>
+    </div>
+
+    <div class="features">
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#408A71" stroke-width="1.5">
+            <rect x="2" y="3" width="16" height="14" rx="2" />
+            <path d="M6 3v3M14 3v3M2 9h16" />
+          </svg>
+        </div>
+        <div class="feat-title">Smart Scheduling</div>
+        <div class="feat-desc">
+          Organize match schedules across all sports and venues automatically.
+          No conflicts, no confusion.
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#408A71" stroke-width="1.5">
+            <path d="M10 2l2 5.5H18l-4.5 3.3 1.7 5.5L10 13l-5.2 3.3 1.7-5.5L2 7.5h6z" />
+          </svg>
+        </div>
+        <div class="feat-title">Live Standings</div>
+        <div class="feat-desc">
+          Real-time leaderboards and team rankings updated as matches are
+          recorded. Always accurate.
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#408A71" stroke-width="1.5">
+            <circle cx="10" cy="10" r="8" />
+            <path d="M10 6v4l3 3" />
+          </svg>
+        </div>
+        <div class="feat-title">Match Results</div>
+        <div class="feat-desc">
+          Log and track every game result instantly. Full history of wins,
+          losses, and draws per team.
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#408A71" stroke-width="1.5">
+            <path d="M4 17c0-3 2.7-5 6-5s6 2 6 5" />
+            <circle cx="10" cy="7" r="4" />
+          </svg>
+        </div>
+        <div class="feat-title">Athlete Profiles</div>
+        <div class="feat-desc">
+          Manage and track every registered participant from their department,
+          year, and sport assignment.
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#408A71" stroke-width="1.5">
+            <path d="M3 3h14v14H3zM8 8h4M8 12h4M8 6h4" />
+          </svg>
+        </div>
+        <div class="feat-title">Event Management</div>
+        <div class="feat-desc">
+          Create and manage events end-to-end — from registration all the way
+          to final results.
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#408A71" stroke-width="1.5">
+            <path d="M4 15l4-4 3 3 5-6" />
+            <rect x="2" y="2" width="16" height="16" rx="2" />
+          </svg>
+        </div>
+        <div class="feat-title">Progress Tracker</div>
+        <div class="feat-desc">
+          Monitor overall intramurals completion and per-sport event progress
+          at a single glance.
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-header" style="padding-top: 0">
+      <div class="sec-tag">Sports</div>
+      <div class="sec-title">7 categories. One platform.</div>
+      <div class="sec-sub">All intramural sports managed under one roof.</div>
+    </div>
+
+    <div class="sports-wrap">
+      <div class="sports-grid">
+        <div class="sport-card">
+          <span class="sport-emoji" style="font-size: 26px; display: block; margin-bottom: 10px">🏀</span>
+          <div class="sport-name">Basketball</div>
+          <div class="sport-count">12 teams</div>
+        </div>
+        <div class="sport-card">
+          <span class="sport-emoji" style="font-size: 26px; display: block; margin-bottom: 10px">⚽</span>
+          <div class="sport-name">Football</div>
+          <div class="sport-count">8 teams</div>
+        </div>
+        <div class="sport-card">
+          <span class="sport-emoji" style="font-size: 26px; display: block; margin-bottom: 10px">🏐</span>
+          <div class="sport-name">Volleyball</div>
+          <div class="sport-count">10 teams</div>
+        </div>
+        <div class="sport-card">
+          <span class="sport-emoji" style="font-size: 26px; display: block; margin-bottom: 10px">🏸</span>
+          <div class="sport-name">Badminton</div>
+          <div class="sport-count">6 pairs</div>
+        </div>
+        <div class="sport-card">
+          <span class="sport-emoji" style="font-size: 26px; display: block; margin-bottom: 10px">🏓</span>
+          <div class="sport-name">Table Tennis</div>
+          <div class="sport-count">8 players</div>
+        </div>
+        <div class="sport-card">
+          <span class="sport-emoji" style="font-size: 26px; display: block; margin-bottom: 10px">♟️</span>
+          <div class="sport-name">Chess</div>
+          <div class="sport-count">24 players</div>
+        </div>
+        <div class="sport-card">
+          <span class="sport-emoji" style="font-size: 26px; display: block; margin-bottom: 10px">🏃</span>
+          <div class="sport-name">Track &amp; Field</div>
+          <div class="sport-count">45 athletes</div>
+        </div>
+        <div class="sport-card" style="border-style: dashed; opacity: 0.4">
+          <div
+            style="
+              width: 26px;
+              height: 26px;
+              border: 2px dashed rgba(176, 228, 204, 0.4);
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 0 auto 10px;
+            "
+          >
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#B0E4CC" stroke-width="1.5">
+              <path d="M6 2v8M2 6h8" />
+            </svg>
+          </div>
+          <div class="sport-name">Coming Soon</div>
+          <div class="sport-count">TBA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-header" style="padding-top: 0">
+      <div class="sec-tag">How it works</div>
+      <div class="sec-title">Simple from start to finish</div>
+    </div>
+    <div class="how-wrap">
+      <div class="how-steps">
+        <div class="how-step">
+          <div class="step-num">1</div>
+          <div class="step-title">Log In</div>
+          <div class="step-desc">
+            Sign in with your DCS account to access your role — admin, coach,
+            or athlete.
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="step-num">2</div>
+          <div class="step-title">Register</div>
+          <div class="step-desc">
+            Enroll your team or athletes into the events and sports categories.
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="step-num">3</div>
+          <div class="step-title">Compete</div>
+          <div class="step-desc">
+            Follow the schedule and play. Admins log results in real time.
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="step-num">4</div>
+          <div class="step-title">Track</div>
+          <div class="step-desc">
+            Monitor standings, statistics, and event completion as the games
+            progress.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <div class="cta-title">Ready to enter the Arena?</div>
+      <div class="cta-sub">
+        Log in to manage events, track results, and follow your team's journey
+        through the intramurals.
+      </div>
+      <div class="cta-btns">
+        <button class="btn-main">Log In Now</button>
+        <button class="btn-outline">Learn More</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-left">
+        © 2024 DCS Arena · Ateneo de Naga University · Department of Computer
+        Studies
+      </div>
+      <div class="footer-right">Built by <span>Tresmarios</span></div>
+    </footer>
+  </div>
+</template>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --c1: #091413;
+  --c2: #285a48;
+  --c3: #408a71;
+  --c4: #b0e4cc;
+}
+
+body {
+  background: var(--c1);
+  color: var(--c4);
+}
+
+.page {
+  background: var(--c1);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  border-bottom: 1px solid rgba(176, 228, 204, 0.08);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 34px;
+  height: 34px;
+  background: var(--c3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--c4);
+  letter-spacing: -0.5px;
+}
+
+.logo-text span {
+  color: var(--c3);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(176, 228, 204, 0.6);
+  cursor: pointer;
+  letter-spacing: 0.3px;
+}
+
+.nav-link:hover {
+  color: var(--c4);
+}
+
+.nav-cta {
+  background: var(--c3);
+  color: var(--c1);
+  border: none;
+  padding: 9px 20px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.hero {
+  padding: 80px 40px 60px;
+  text-align: center;
+  border-bottom: 1px solid rgba(176, 228, 204, 0.06);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(64, 138, 113, 0.15);
+  border: 1px solid rgba(64, 138, 113, 0.3);
+  border-radius: 20px;
+  padding: 5px 14px;
+  margin-bottom: 28px;
+}
+
+.hero-badge-dot {
+  width: 6px;
+  height: 6px;
+  background: #4ade80;
+  border-radius: 50%;
+}
+
+.hero-badge-text {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--c3);
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  font-size: 46px;
+  font-weight: 900;
+  color: var(--c4);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title em {
+  color: var(--c3);
+  font-style: normal;
+}
+
+.hero-sub {
+  font-size: 14px;
+  color: rgba(176, 228, 204, 0.55);
+  line-height: 1.7;
+  max-width: 420px;
+  margin: 0 auto 36px;
+  font-weight: 500;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-main {
+  background: var(--c3);
+  color: var(--c1);
+  border: none;
+  padding: 13px 28px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--c4);
+  border: 1px solid rgba(176, 228, 204, 0.25);
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sec-header {
+  text-align: center;
+  padding: 52px 40px 32px;
+}
+
+.sec-tag {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  color: var(--c3);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.sec-title {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--c4);
+  letter-spacing: -0.8px;
+}
+
+.sec-sub {
+  font-size: 13px;
+  color: rgba(176, 228, 204, 0.5);
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 0 40px 52px;
+}
+
+.feat-card {
+  background: #0d1e1b;
+  border: 1px solid rgba(176, 228, 204, 0.09);
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.feat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(64, 138, 113, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.feat-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.feat-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--c4);
+  margin-bottom: 8px;
+}
+
+.feat-desc {
+  font-size: 12px;
+  color: rgba(176, 228, 204, 0.5);
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+.sports-wrap {
+  padding: 0 40px 52px;
+}
+
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.sport-card {
+  background: #0d1e1b;
+  border: 1px solid rgba(176, 228, 204, 0.09);
+  border-radius: 12px;
+  padding: 18px 14px;
+  text-align: center;
+}
+
+.sport-emoji {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sport-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--c4);
+}
+
+.sport-count {
+  font-size: 10px;
+  color: var(--c3);
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+.how-wrap {
+  padding: 0 40px 52px;
+}
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+.how-step {
+  text-align: center;
+  padding: 0 12px;
+  position: relative;
+}
+
+.how-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -1px;
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed rgba(176, 228, 204, 0.15);
+  z-index: 0;
+}
+
+.step-num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--c2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--c4);
+  margin: 0 auto 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.step-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--c4);
+  margin-bottom: 6px;
+}
+
+.step-desc {
+  font-size: 11px;
+  color: rgba(176, 228, 204, 0.45);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.cta-section {
+  margin: 0 40px 40px;
+  background: #0d1e1b;
+  border: 1px solid rgba(176, 228, 204, 0.1);
+  border-radius: 16px;
+  padding: 44px 40px;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--c4);
+  letter-spacing: -0.8px;
+  margin-bottom: 10px;
+}
+
+.cta-sub {
+  font-size: 13px;
+  color: rgba(176, 228, 204, 0.5);
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+.cta-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer {
+  border-top: 1px solid rgba(176, 228, 204, 0.07);
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  font-size: 11px;
+  color: rgba(176, 228, 204, 0.3);
+  font-weight: 500;
+}
+
+.footer-right {
+  font-size: 11px;
+  color: rgba(176, 228, 204, 0.3);
+  font-weight: 600;
+}
+
+.footer-right span {
+  color: var(--c3);
+}
+</style>
